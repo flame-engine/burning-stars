@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/usr/bin/env bash -x
 
 cd "$(dirname "${BASH_SOURCE[0]}")"
 cd ../game
