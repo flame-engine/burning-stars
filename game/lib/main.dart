@@ -9,10 +9,11 @@ import 'package:flame/palette.dart';
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(GameWidget(game: MyGame()));
+  runApp(GameWidget(game: BurningStarsGame()));
 }
 
-class ShipComponent extends PositionComponent with HasGameRef<MyGame> {
+class ShipComponent extends PositionComponent
+    with HasGameRef<BurningStarsGame> {
   static final _white = BasicPalette.white.paint;
 
   @override
@@ -30,7 +31,7 @@ class ShipComponent extends PositionComponent with HasGameRef<MyGame> {
   }
 }
 
-class MyGame extends BaseGame {
+class BurningStarsGame extends BaseGame {
   @override
   Future<void> onLoad() async {
     add(ShipComponent());
