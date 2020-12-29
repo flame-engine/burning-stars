@@ -13,7 +13,7 @@ fi
 flutter pub get
 
 ANALYZE_ISSUES=$(flutter analyze .)
-if ! echo "$result" | grep -q "No issues found!"; then
+if ! echo "$ANALYZE_ISSUES" | grep -q "No issues found!"; then
   echo "flutter analyze issue: $1"
   echo "$ANALYZE_ISSUES"
   exit 1
