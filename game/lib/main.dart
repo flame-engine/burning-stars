@@ -18,10 +18,10 @@ class ShipComponent extends PositionComponent
 
   @override
   Future<void> onLoad() async {
-    this.position = gameRef.size / 2;
-    this.size = Vector2.all(20.0);
-    this.anchor = Anchor.center;
-    this.angle = pi / 4;
+    position = gameRef.size / 2;
+    size = Vector2.all(20.0);
+    anchor = Anchor.center;
+    angle = pi / 4;
   }
 
   @override
